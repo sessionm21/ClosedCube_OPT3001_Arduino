@@ -8,7 +8,7 @@ Hardware connections for Arduino Uno:
 VDD to 3.3V DC
 SDA to A4
 SCL to A5
-GND to common groud
+GND to common ground
 
 Written by AA for ClosedCube
 
