@@ -122,7 +122,7 @@ OPT3001_ErrorCode ClosedCube_OPT3001::readData(uint16_t* data)
 {
 	uint8_t	buf[2];
 
-	Wire.requestFrom(_address, 2);
+	Wire.requestFrom(_address, (uint8_t)2);
 
 	int counter = 0;
 	while (Wire.available() < 2)
