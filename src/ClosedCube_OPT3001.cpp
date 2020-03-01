@@ -98,7 +98,7 @@ OPT3001 ClosedCube_OPT3001::readRegister(OPT3001_Commands command) {
 		error = readData(&er.rawData);
 		if (error == NO_ERROR) {
 			result.raw = er;
-			result.lux = 0.01*pow(2, er.Exponent)*er.Result;
+			result.lux = 0.01*pow(2.0, er.Exponent)*er.Result;
 		}
 		else {
 			result.error = error;
